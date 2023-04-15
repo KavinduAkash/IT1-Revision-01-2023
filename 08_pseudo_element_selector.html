@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>08 Pseudo Element Selector</title>
+
+    <style>
+
+        /*( :: )*/
+        /*p::first-line {*/
+        /*    color: red;*/
+        /*}*/
+
+        p::first-letter {
+            color: red;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        h1::before {
+            content: "Hi ";
+        }
+
+        h1::after {
+            content: "☺️";
+        }
+
+        input::placeholder {
+            color: red;
+        }
+
+        p::selection {
+            background-color: pink;
+            color: red;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Hello CSS</h1>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam at, consequuntur facilis inventore quaerat quisquam quos soluta vero? Aliquam doloremque eius fugiat, quasi quisquam recusandae voluptate voluptatem voluptates. Exercitationem, reprehenderit?
+    </p>
+
+
+    <br>
+
+    <input type="text" placeholder="Please enter value">
+
+</body>
+</html>
