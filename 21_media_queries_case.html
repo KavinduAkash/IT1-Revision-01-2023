@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>21 Media Query Case</title>
+    <link rel="stylesheet" href="assests/normalize.css">
+    <style>
+
+        header {
+            width: 100vw;
+            background: lightgray;
+            height: 50px;
+            display: flex;
+            align-items: center;
+        }
+
+        header > img {
+            padding-left: 10px;
+        }
+
+        .course {
+            width: 100vw;
+            height: 250px;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .course>div {
+            width: 350px;
+            height: 250px;
+            background: orangered;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .about {
+            width: 100vw;
+            border: orange;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .about>div:first-child {
+            /*width: 80vw;*/
+        }
+        .about>div:nth-child(2) {
+            /*width: 20vw;*/
+        }
+
+        @media all and (max-width:  1200px) {
+            .course {
+               flex-direction: column;
+            }
+
+            .course>div {
+                width: 100%;
+                margin: 10px;
+            }
+        }
+
+        @media all and (max-width:  600px) {
+            .about {
+                display: none;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+<header>
+    <img src="https://www.ijse.lk/images/logos/ijse.png" width="100" title="logo " alt="logo">
+</header>
+
+<main>
+
+    <section class="course">
+        <div>
+
+            CMJD
+
+        </div>
+        <div>
+
+            GDSE
+
+        </div>
+        <div>
+
+            DEP
+
+        </div>
+    </section>
+
+    <section class="about">
+
+        <div>
+            <img src="https://www.ijse.lk/images/home/welcome.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://www.ijse.lk/images/home/welcome.jpg" alt="">
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+</html>
