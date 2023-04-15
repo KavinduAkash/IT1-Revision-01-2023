@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>10 Combinators</title>
+
+    <style>
+
+/*        There are 4 types of Combinator*/
+/*        1) Child Combinator - check direct child ( > )*/
+/*        2) Decendent Combinator - select the child if exist anywhere inside the parent ( " " space )*/
+/*        3) Adjacent Combinator - select the element which is located first after given first element ( + )*/
+/*        4) General Siblings Combinator - select the element which is located after given first element ( ~ )*/
+
+/*-----------------------------------------------------------------------*/
+
+/*        1) Child Combinator - check direct child ( > )*/
+/*        section > div {*/
+/*            color: red;*/
+/*        }*/
+
+/*        section > main > section > div {*/
+/*            color: green;*/
+/*        }*/
+
+
+/*-----------------------------------------------------------------------*/
+
+/*        2) Decendent Combinator - select the child if exist anywhere inside the parent ( " " space )*/
+
+        /*section div {*/
+        /*    color: blue;*/
+        /*}*/
+
+/*-----------------------------------------------------------------------*/
+
+/*        3) Adjacent Combinator - select the element which is located first after given first element ( + )*/
+
+        /*h1+h2 {*/
+        /*    color: greenyellow;*/
+        /*}*/
+
+/*-----------------------------------------------------------------------*/
+
+        /*4) General Siblings Combinator - select the element which is located after given first element ( ~ )*/
+        h1~h2 {
+            color: mediumpurple;
+        }
+
+    </style>
+
+</head>
+<body>
+
+
+    <section>
+
+<!--        <main>-->
+
+<!--            <div>-->
+<!--                Hello CSS-->
+<!--            </div>-->
+
+<!--            <section>-->
+
+<!--                <div>-->
+<!--                    Hello JS-->
+<!--                </div>-->
+
+<!--            </section>-->
+
+<!--        </main>-->
+
+<!--            <div>-->
+<!--                Hello HTML-->
+<!--            </div>-->
+
+
+        <h1>Hello CSS 1</h1>
+        <h2>Hello CSS 2</h2>
+        <h2>Hello CSS 3</h2>
+
+        <h1>Hello CSS 4</h1>
+        <p>Hello CSS 5</p>
+        <h2>Hello CSS 3</h2>
+
+    </section>
+
+
+</body>
+</html>
