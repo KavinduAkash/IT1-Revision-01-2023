@@ -70,24 +70,40 @@
         /*}*/
 
         /*>Attribute Selector(check that value has given value as a word)*/
-        [href~="sl"] {
-            color:red;
-            font-weight: bold;
+        /*[href~="sl"] {*/
+        /*    color:red;*/
+        /*    font-weight: bold;*/
+        /*}*/
+
+        /*[lang^="en"] {*/
+        /*    color: greenyellow;*/
+        /*}*/
+
+        /*start 'en'*/
+
+        [lang|="en"] {
+            color: red;
         }
+
 
     </style>
 
 </head>
 <body>
 
-    <a href="https://ebay-sl.com">Visit Ebay</a>
-    <a href="http://daraz-sl.lk">Visit Daraz</a>
+<!--    <a href="https://ebay-sl.com">Visit Ebay</a>-->
+<!--    <a href="http://daraz-sl.lk">Visit Daraz</a>-->
 
-    <a href="https://ebay sl .com">Visit Ebay2</a>
-    <a href="http://daraz sl .lk">Visit Daraz2</a>
+<!--    <a href="https://ebay sl .com">Visit Ebay2</a>-->
+<!--    <a href="http://daraz sl .lk">Visit Daraz2</a>-->
 
-    <a href="https://amazon1.com">Visit Amazon1</a>
-    <a href="ftp://amazon1-file.com">Visit Amazon1</a>
+<!--    <a href="https://amazon1.com">Visit Amazon1</a>-->
+<!--    <a href="ftp://amazon1-file.com">Visit Amazon1</a>-->
+
+
+    <a href="ftp://amazon1-file2.com" lang="en">Visit Amazon1</a>
+    <a href="ftp://amazon1-file2.com" lang="eneeee">Visit Amazon2</a>
+    <a href="ftp://amazon1-file3.com" lang="en-EN">Visit Amazon3</a>
 
     <h1>Hello CSS</h1>
     <p name="hello">
